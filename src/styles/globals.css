@@ -1,3 +1,101 @@
+@import './AnimatedBackground.css';
+@import './font.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/*GLOBAL RESET*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*ROOT APP*/
+#root {
+    min-height: 100vh;
+}
+
+/*LINKS*/
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*LIST*/
+ul,
+ol {
+    list-style: none;
+}
+
+/*BUTTON DEFAULT*/
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: none;
+}
+
+/*INPUT DEFAULT*/
+input,
+textarea,
+select {
+    outline: none;
+    border: none;
+    font-family: inherit;
+}
+
+/*IMAGES*/
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/*SCROLLBAR*/
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #e5e7eb;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #94a3b8;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #64748b;
+}
+
+/*color*/
+
+:root {
+    --glassgradient: linear-gradient(180deg,
+            rgba(255, 255, 255, 0.14) 0%,
+            rgba(255, 255, 255, 0.07) 45%,
+            rgba(255, 255, 255, 0.04) 100%);
+    --DarkPurple: #3F0B79;
+    --SecondaryPurple: #BD4BF8;
+    --PrimaryOrange: #FE5001;
+    --BabyOrange: #FE7B02;
+    --Black: #000000;
+    --Gray: #A7A7A7;
+    --LightGray: #F6F6F6;
+    --White: #ffffff;
+    --BorderColor: rgba(255, 255, 255, 0.18);
+
+}
+
+/*clases*/
+.glassyfinish {
+    background: var(--glassgradient);
+    border: 1px solid var(--BorderColor);
+    backdrop-filter: blur(28px);
+    -webkit-backdrop-filter: blur(28px);
+
+}
