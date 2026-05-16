@@ -19,6 +19,7 @@ export default function ShopPage() {
           <div className="useravatar">JD</div>
         </div>
       </div>
+
       <div className='cartpannel'>
         <div className='cartleft'>
           <ShopCarousel />
