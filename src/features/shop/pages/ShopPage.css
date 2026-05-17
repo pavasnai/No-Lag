@@ -1,3 +1,10 @@
+/* header */
+.pageheader {
+    width: 60%;
+    margin: 0rem auto;
+    padding: 1rem 0;
+}
+
 .ShopContainer {
     width: 75%;
     margin: 0rem auto;
@@ -96,6 +103,15 @@
     font-size: 14px;
     font-weight: 700;
     cursor: pointer;
+}
+
+
+
+/* shop page */
+.ShopContainer {
+    width: 75%;
+    margin: 0rem auto;
+    padding: 1rem 0;
 }
 
 .cartpannel {
