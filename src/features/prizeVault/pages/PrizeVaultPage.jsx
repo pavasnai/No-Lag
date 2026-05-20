@@ -1,5 +1,6 @@
 import '../../../../src/features/prizeVault/pages/PrizeVaultPage.css';
 import ChallengeCarousel from '../../prizeVault/pages/ChallengeCarousel';
+import PrizeCarousel from '../../prizeVault/pages/PrizeCarousel';
 import { IoGameControllerOutline } from "react-icons/io5";
 import { FaStarHalfAlt } from "react-icons/fa";
 import { TbApps } from "react-icons/tb";
@@ -246,6 +247,9 @@ export default function PrizeVaultPage() {
             </div>
           </div>
         </div>
+      </div>
+      <div class="displaycontent Prizevaulttab">
+        <PrizeCarousel />
       </div>
     </div>
   );
