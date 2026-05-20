@@ -16,8 +16,8 @@
 }
 
 .shopheader {
-    padding: 10px 1rem;
-    padding-bottom: 0;
+    padding: 0 1rem;
+
 }
 
 /* TITLE */
@@ -78,7 +78,6 @@
 
 /* Card */
 .shopcard {
-    height: 365px;
     border-radius: 20px;
     color: #fff;
     font-size: 28px;

@@ -15,7 +15,7 @@ export default function GamesPage() {
       <div class="displaycontent gamescontent">
         <GameCarousel />
       </div>
-      <div class="displaycontent appsontent">
+      <div class="displaycontent appcontent">
         <div class="appswrapper">
           <div class="appsgrid">
             <div class="appcard">

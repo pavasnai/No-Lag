@@ -36,6 +36,13 @@ input[type="radio"] {
 
 }
 
+.tab-btn:focus,
+.tab-btn:focus-visible {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
 #games-tab:checked~.tabs label[for="games-tab"],
 #apps-tab:checked~.tabs label[for="apps-tab"] {
 
@@ -80,14 +87,8 @@ input[type="radio"] {
     display: block;
 }
 
-#apps-tab:checked~.appsontent {
+#apps-tab:checked~.appcontent {
     display: block;
-}
-
-.title {
-    font-size: 34px;
-    margin-bottom: 25px;
-    font-weight: bold;
 }
 
 /* CARDS */
@@ -99,7 +100,6 @@ input[type="radio"] {
 
 .gamecard {
     position: relative;
-    height: 320px;
     overflow: hidden;
     border-radius: 24px;
     cursor: pointer;

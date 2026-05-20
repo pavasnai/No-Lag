@@ -1,8 +1,13 @@
 import '../../shop/pages/ShopPage.css';
 import ShopCarousel from '../../ShopCarousel/ShopCarousel';
 import { IoSettingsOutline } from "react-icons/io5";
+import { IoIosArrowDown } from "react-icons/io";
 import ProductImage from "../../../assets/image/ProductImage.png";
 import { MdOutlineCurrencyRupee } from "react-icons/md";
+import { IoHome } from "react-icons/io5";
+import { RiAppsLine } from "react-icons/ri";
+import { RiShoppingBag4Fill } from "react-icons/ri";
+import { FaTrophy } from "react-icons/fa6";
 export default function ShopPage() {
   return (
     <>
@@ -14,16 +19,35 @@ export default function ShopPage() {
           </div>
           <div className="shoplogo">Clutc<span>HH</span></div>
           <div className="headerright">
-            <div className="iconbtn">
-              <IoSettingsOutline />
+            <div class="dropdownwrapper">
+              <div class="iconbtn">
+                <IoSettingsOutline />
+              </div>
+              <div class="dropdownmenu">
+                <p>Settings</p>
+                <p>Appearance</p>
+                <p>Notifications</p>
+              </div>
             </div>
-            <div className="useravatar">JD</div>
+            <div className='userlogin'>
+              <div className="useravatar">JD</div>
+              <div class="dropdownwrapper">
+                <div className='avatardropdown'>
+                  <IoIosArrowDown />
+                </div>
+                <div class="dropdownmenu">
+                  <p>Settings</p>
+                  <p>Appearance</p>
+                  <p>Notifications</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <div className='ShopContainer'>
         <div className='cartpannel'>
-          <div className='cartleft'>
+          <div className='cartleft glassyscrollbar'>
             <ShopCarousel />
             <ShopCarousel className="asd" />
             <ShopCarousel />
@@ -39,7 +63,7 @@ export default function ShopPage() {
                 <p>Add Coins</p>
               </button>
             </div>
-            <div class="cartcard glassyfinish">
+            <div class="cartcard glassyfinish glassyscrollbar">
               <div className='carttop'>
                 <div className='cratheading'>Cart</div>
                 <div className='cartquantity'>3items</div>
@@ -54,7 +78,6 @@ export default function ShopPage() {
                     <p><span><MdOutlineCurrencyRupee /></span>500</p>
                   </div>
                 </div>
-
                 <div className='listquantity'>
                   <span>-</span>
                   <p>1</p>
@@ -71,7 +94,6 @@ export default function ShopPage() {
                     <p><span><MdOutlineCurrencyRupee /></span>500</p>
                   </div>
                 </div>
-
                 <div className='listquantity'>
                   <span>-</span>
                   <p>1</p>
@@ -88,7 +110,6 @@ export default function ShopPage() {
                     <p><span><MdOutlineCurrencyRupee /></span>500</p>
                   </div>
                 </div>
-
                 <div className='listquantity'>
                   <span>-</span>
                   <p>1</p>
@@ -105,14 +126,12 @@ export default function ShopPage() {
                     <p><span><MdOutlineCurrencyRupee /></span>500</p>
                   </div>
                 </div>
-
                 <div className='listquantity'>
                   <span>-</span>
                   <p>1</p>
                   <span>+</span>
                 </div>
               </div>
-
               <div class="cartcheckout">
                 <div className='totalcost'>
                   <div className='costleft'>
@@ -123,8 +142,6 @@ export default function ShopPage() {
                     <h5>14550</h5>
                     <p>14750</p>
                   </div>
-
-
                 </div>
                 <button >
                   Checkout
@@ -134,6 +151,26 @@ export default function ShopPage() {
           </div>
         </div>
       </div >
+      <div className='pagefooter'>
+        <div class="glassnavbar">
+          <div class="navitem navactive">
+            <IoHome />
+            <span>Home</span>
+          </div>
+          <div class="navitem">
+            <RiAppsLine />
+            <span>Games & Apps</span>
+          </div>
+          <div class="navitem">
+            <RiShoppingBag4Fill />
+            <span>Shop</span>
+          </div>
+          <div class="navitem ">
+            <FaTrophy />
+            <span>Awards</span>
+          </div>
+        </div>
+      </div>
     </>
   );
 }
