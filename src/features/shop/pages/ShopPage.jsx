@@ -19,7 +19,7 @@ export default function ShopPage() {
           </div>
           <div className='pagefooter'>
             <div class="glassnavbar">
-              <div class="navitem navactive">
+              <div class="navitem navactive item">
                 <IoHome />
                 <span>Home</span>
               </div>
