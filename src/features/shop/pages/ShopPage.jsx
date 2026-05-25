@@ -8,16 +8,39 @@ import { IoHome } from "react-icons/io5";
 import { RiAppsLine } from "react-icons/ri";
 import { RiShoppingBag4Fill } from "react-icons/ri";
 import { FaTrophy } from "react-icons/fa6";
+import Nolaglogo from "../../../assets/image/logo.svg";
 export default function ShopPage() {
   return (
     <>
       <div className='pageheader'>
         <div className='cartheader glassyfinish'>
+          <div className="shoplogo">
+            <img src={Nolaglogo} alt="logo" />
+          </div>
+          <div className='pagefooter'>
+            <div class="glassnavbar">
+              <div class="navitem navactive">
+                <IoHome />
+                <span>Home</span>
+              </div>
+              <div class="navitem">
+                <RiAppsLine />
+                <span>Games & Apps</span>
+              </div>
+              <div class="navitem">
+                <RiShoppingBag4Fill />
+                <span>Shop</span>
+              </div>
+              <div class="navitem ">
+                <FaTrophy />
+                <span>Awards</span>
+              </div>
+            </div>
+          </div>
           <div className="sessionbadge">
             <div className="indicator"></div>
             <p>SESSION &nbsp;<span>49:22:21</span></p>
           </div>
-          <div className="shoplogo">Clutc<span>HH</span></div>
           <div className="headerright">
             <div class="dropdownwrapper">
               <div class="iconbtn">
@@ -151,26 +174,6 @@ export default function ShopPage() {
           </div>
         </div>
       </div >
-      <div className='pagefooter'>
-        <div class="glassnavbar">
-          <div class="navitem navactive">
-            <IoHome />
-            <span>Home</span>
-          </div>
-          <div class="navitem">
-            <RiAppsLine />
-            <span>Games & Apps</span>
-          </div>
-          <div class="navitem">
-            <RiShoppingBag4Fill />
-            <span>Shop</span>
-          </div>
-          <div class="navitem ">
-            <FaTrophy />
-            <span>Awards</span>
-          </div>
-        </div>
-      </div>
     </>
   );
 }
