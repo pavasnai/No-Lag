@@ -21,7 +21,7 @@ export default function ShopPage() {
             <div class="glassnavbar">
               <div class="navitem navactive item">
                 <IoHome />
-                <span>Home</span>
+                <span>Home </span>
               </div>
               <div class="navitem">
                 <RiAppsLine />
