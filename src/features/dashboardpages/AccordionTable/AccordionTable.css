@@ -1,0 +1,257 @@
+.tablewrapper {
+    border-radius: 16px;
+    overflow: hidden;
+    width: 100%;
+    box-shadow: 0px 20px 48px -12px #00000080;
+}
+
+/* shared grid template for head + rows */
+.tablehead,
+.tablerow {
+    display: grid;
+    grid-template-columns:
+        48px
+        /* dot */
+        1.4fr
+        /* session */
+        1.1fr
+        /* pc */
+        1fr
+        /* status */
+        1.1fr
+        /* session type */
+        1fr
+        /* time played */
+        1.2fr
+        /* started at */
+        1.2fr
+        /* ended at */
+        1.1fr;
+    /* logged in by */
+    align-items: center;
+}
+
+.tablehead {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.14) 0%, rgba(255, 255, 255, 0.07) 45%, rgba(255, 255, 255, 0.04) 100%);
+    box-shadow: 0px 20px 48px -12px #00000080;
+    height: 56px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #c9c9d4;
+}
+
+.tablerow {
+    min-height: 76px;
+    border-top: 1px solid var(--border);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.14) 0%, rgba(255, 255, 255, 0.07) 45%, rgba(255, 255, 255, 0.04) 100%);
+    box-shadow: 0px 20px 48px -12px #00000080;
+    transition: background 0.15s ease;
+}
+
+.tablerow:hover {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.14) 0%, rgba(255, 255, 255, 0.07) 45%, rgba(255, 255, 255, 0.04) 100%);
+    box-shadow: 0px 20px 48px -12px #00000080;
+}
+
+.tableleft {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.checkbox {
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.checkboxActive {
+    background: #22d3ee;
+    color: #000;
+    border-color: #22d3ee;
+}
+
+.arrowBox {
+    width: 32px;
+    height: 32px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow {
+    font-size: 22px;
+    transition: 0.3s;
+}
+
+.subText {
+    color: #94a3b8;
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+.tableuser {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.tableavatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #ff6a00, #ff2d55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.userstatus {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 14px;
+    border-radius: 12px;
+    border: 1px solid rgba(34, 211, 238, 0.3);
+    color: #22d3ee;
+    background: rgba(34, 211, 238, 0.1);
+    width: fit-content;
+}
+
+.statusdot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #22d3ee;
+}
+
+.dropdownWrapper {
+    overflow: hidden;
+    transition: all 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+    background: #000;
+}
+
+.dropdown {
+    background: #000;
+    padding: 30px;
+}
+
+.dropdownTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding-bottom: 10px;
+}
+
+.dropdownLeft {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.pcTitle {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.gpuText {
+    color: #9ca3af;
+    font-size: 14px;
+}
+
+.progressWrapper {
+    flex: 1;
+    text-align: center;
+}
+
+.progressTitle {
+    font-size: 18px;
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+.progressBar {
+    width: 240px;
+    height: 6px;
+    border-radius: 999px;
+    background: #1f2937;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.progressFill {
+    width: 45%;
+    height: 100%;
+    background: #facc15;
+}
+
+.price {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.cardGrid {
+    display: grid;
+    grid-template-columns: 1.3fr 1.2fr 1fr;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.card {
+    border-left: 1px solid rgba(255, 255, 255, 0.18);
+    padding-left: 20px;
+}
+
+.cardTag {
+    display: inline-block;
+    background: #2b2b2b;
+    color: #d1d5db;
+    padding: 8px 14px;
+    border-radius: 10px;
+    font-size: 14px;
+    margin-bottom: 24px;
+}
+
+.cardRow {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+    color: #f3f4f6;
+    font-size: 16px;
+    gap: 20px;
+}
+
+.depositTitle {
+    color: #d1d5db;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.money {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.successText {
+    color: #22c55e;
+    font-size: 16px;
+}
+
+.activityItem {
+    color: #f3f4f6;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
